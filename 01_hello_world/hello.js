@@ -1,1 +1,3 @@
-console.log("Hey There, i am zeeshan khan")
+const math = require("./math");
+
+console.log(math.add(2, 3));
