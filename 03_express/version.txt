@@ -17,3 +17,8 @@
 // ^ compatilbe with version || ^4.18.2 matlab 4 ko update karke 5 mat karna aur baqi ko update karte rhena
 
 // ~ ~4.18.2 recommended wale ko bhi update mat karna || 18 ko bhi update mat karna
+
+---------------------------- REST FULL API ----------------------------------
+server and client arcitucture per kam karti he => server alag antity he, client alag antity he, dono men sy koi kisi per depend nhe he
+isme server database se data leker Khud render karke client ko bhejta he, is ko hum server side rendring bhi bolte hen ssr.
+aur aik csr hota he ke jisme server sirf json ki surat men database se data lakar client ro send karta he, phir client khud is ko render karta he, ise hum client side rendring bhi khete hen.
