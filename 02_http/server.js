@@ -26,3 +26,10 @@ const port = 8000;
 server.listen(port, () => {
   console.log(`server listen on port ${port}`);
 });
+
+// http method:
+// GET : When you want to get some data from the server . browser hamesha get request karta he.
+// POST : When you want to send and mutate (data change karna || data add karna) some data in server
+// PUT: Used to update an existing resource or create a new resource if it doesn't exist.
+// PATCH : Similar to PUT, but used to apply partial updates to a resource rather than completely replacing it.
+// DELETE : Used to delete a resource from the server. It signals the server to remove the specified resource.
