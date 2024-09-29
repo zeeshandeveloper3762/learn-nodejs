@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 8000;
 const users = require("./MOCK_DATA.json");
+const fs = require("fs")
 
 app.use(express.urlencoded({ extended: false }));
 
@@ -27,6 +28,19 @@ app.get("/api/users/:id", (req, res) => {
   const id = Number(req.params.id);
   const user = users.find((user) => user.id === id);
   return res.json(user);
+});
+
+app.post("/api/users", (req, res) => {
+  const body = req.body;
+  users.push({ ...body, id: users.length + 1 });
+  fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (error, data) => {
+    return res.json({status: "panding"})
+    // if(error){
+    //   console.log(error)
+    // }else{
+
+    // }
+  })
 });
 
 // dimilar route ko aik he dafa handle karna
